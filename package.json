@@ -1,5 +1,5 @@
 {
-  "name": "react-example",
+  "name": "mealplan",
   "private": true,
   "homepage": "https://entriprenyur-cmd.github.io/MealPlan",
   "version": "0.0.0",
@@ -11,7 +11,7 @@
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
