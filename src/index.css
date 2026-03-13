@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+body {
+  @apply antialiased;
+}
+
+@media print {
+  header, 
+  section:not(#weekly-plan-section),
+  #dish-input,
+  #add-dish-btn,
+  button:not(.print-visible) {
+    display: none !important;
+  }
+
+  body {
+    background-color: white !important;
+    padding: 0 !important;
+  }
+
+  .max-w-6xl {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #weekly-plan-section {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
